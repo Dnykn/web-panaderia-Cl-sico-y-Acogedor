@@ -1,6 +1,6 @@
-# Propuesta de Página Web para Panadería: [Estilo del Diseño]
+# Propuesta de Página Web para Panadería: [Clásico y Acogedor]
 
-Este repositorio contiene el código fuente de una propuesta de diseño para una página web de una panadería, desarrollada como parte de un portafolio de desarrollo frontend. El objetivo de este diseño es capturar la esencia de una panadería con una personalidad [clásica y acogedora / moderna y minimalista / rústica y artesanal], ofreciendo una experiencia de usuario única y funcional.
+Este repositorio contiene el código fuente de una propuesta de diseño para una página web de una panadería, desarrollada como parte de un portafolio de desarrollo frontend. El objetivo de este diseño es capturar la esencia de una panadería con una personalidad [clásica y acogedora], ofreciendo una experiencia de usuario única y funcional.
 ![Captura de pantalla 2025-07-01 184328](https://github.com/user-attachments/assets/48b11388-2347-4e67-bbfa-41ad840bb1a6)
 
 
@@ -18,7 +18,6 @@ Puedes ver una demostración en vivo de este proyecto aquí:
 *   **Diseño Responsivo:** Completamente adaptable a dispositivos móviles, tabletas y ordenadores de escritorio.
 *   **HTML5 Semántico:** Estructura del sitio clara y optimizada para SEO.
 *   **CSS Moderno:** Uso de Flexbox, Grid, variables CSS y animaciones sutiles para una experiencia visual fluida.
-*   **Interactividad con JavaScript:** [Menciona aquí la funcionalidad JS específica de esta demo, ej: Carrusel de productos, Menú de pestañas, Ventanas modales con sistema de pedido].
 *   **Integración con WhatsApp:** Sistema de pedidos y contacto directo a través de WhatsApp para facilitar la comunicación con el cliente.
 *   **Mapa de Ubicación:** Mapa de Google Maps integrado para mostrar la localización del negocio.
 
@@ -32,7 +31,7 @@ Puedes ver una demostración en vivo de este proyecto aquí:
 
 ---
 
-👤 Autor
+## 👤 Autor
 Andy Campos
 
 Portafolio: https://andy-portafolio.netlify.app
@@ -41,12 +40,11 @@ Portafolio: https://andy-portafolio.netlify.app
 
 ## 🎨 Concepto del Diseño
 
-**Estilo:** [Estilo del Diseño]
+**Estilo:** [Clásico y Acogedor]
 
-La paleta de colores [describe brevemente los colores, ej: tonos crema y marrones] y la tipografía [describe las fuentes, ej: una serif elegante para títulos y una sans-serif legible para el cuerpo] fueron seleccionadas para transmitir una sensación de [describe la emoción, ej: tradición, modernidad, artesanía].
+La paleta de colores [tonos crema, marrones cálidos y un rojo suave] y la tipografía [una fuente serif (Lora) para títulos y una sans-serif (Roboto) para el cuerpo] fueron seleccionadas para transmitir una sensación de`tradición, calidez y confianza.
 
-El elemento interactivo principal, un [nombre del elemento, ej: carrusel], fue diseñado para [explica el propósito, ej: destacar los productos estrella de forma dinámica y atractiva].
-
+El elemento interactivo principal, un carrusel de productos, fue diseñado para destacar los productos estrella de forma visualmente atractiva sin abrumar al usuario.
 ---
 
 ## 🔧 Instalación y Uso
