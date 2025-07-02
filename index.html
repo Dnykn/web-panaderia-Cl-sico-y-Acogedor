@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Horno de la Tierra - Panadería Artesanal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Cambia las fuentes para el estilo clásico y acogedor -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="imagenes/Pan-Dulce-blog.jpg" alt="El Horno de la Tierra" style="height:40px; vertical-align:middle;">
+                El Horno de la Tierra
+            </a>
+            <nav class="nav">
+                <a href="#nosotros">Nuestra Historia</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Historia con animación -->
+        <section id="nosotros" class="section animate-on-scroll">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <img src="imagenes/Pan-Dulce-blog.jpg" alt="Panadero sonriendo" class="section-img">
+                <p>Desde 1950, en Panadería La Tradición hemos perfeccionado nuestras recetas familiares para llevar a tu mesa el pan más fresco y delicioso. Cada pieza es un trozo de nuestra historia.</p>
+            </div>
+        </section>
+
+        <!-- Carrusel actualizado para distribuidores -->
+        <section id="productos" class="section bg-light animate-on-scroll">
+            <div class="container">
+                <h2>Catálogo para Distribuidores</h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-slide">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Pan rústico">
+                            <h3>Pan Rústico de Masa Madre</h3>
+                            <p>Corteza crujiente e interior suave. Un clásico que no puede faltar en tu negocio.</p>
+                            <button class="whatsapp-button" onclick="pedirProducto('Pan Rústico de Masa Madre')">Solicitar Pedido</button>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Croissants">
+                            <h3>Croissants de Mantequilla</h3>
+                            <p>Hojaldrados y dorados, el complemento perfecto para los desayunos de tus clientes.</p>
+                            <button class="whatsapp-button" onclick="pedirProducto('Croissants de Mantequilla')">Solicitar Pedido</button>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Tarta de frutas">
+                            <h3>Tarta de Frutas de Temporada</h3>
+                            <p>Una base dulce con crema pastelera y las frutas más frescas del día.</p>
+                            <button class="whatsapp-button" onclick="pedirProducto('Tarta de Frutas de Temporada')">Solicitar Pedido</button>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="imagenes/Pan-Dulce-blog.jpg" alt="Magdalenas">
+                            <h3>Magdalenas Caseras</h3>
+                            <p>Esponjosas y tiernas, como las que hacía la abuela.</p>
+                            <button class="whatsapp-button" onclick="pedirProducto('Magdalenas Caseras')">Solicitar Pedido</button>
+                        </div>
+                    </div>
+                    <button class="carousel-button prev">❮</button>
+                    <button class="carousel-button next">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección para distribuidores -->
+        <section id="distribucion" class="section animate-on-scroll">
+            <div class="container">
+                <h2>Proveemos a los Mejores Negocios</h2>
+                <p>¿Tienes una cafetería, restaurante u hotel? Lleva la calidad de "La Tradición" a tus clientes. Ofrecemos precios especiales por volumen y entregas programadas. ¡Hablemos!</p>
+                <a href="https://api.whatsapp.com/send?phone=TUNUMERO&text=¡Hola!%20Estoy%20interesado%20en%20la%20distribución%20de%20sus%20panes%20para%20mi%20negocio." target="_blank" class="cta-button-distribucion">Contactar para Distribución</a>
+            </div>
+        </section>
+
+        <!-- Sección de Mapa (sin cambios) -->
+        <section id="contacto" class="section">
+            <div class="container contact-info">
+                <div>
+                    <h2>Visítanos</h2>
+                    <p>Estamos en Calle del Pan, 123, Ciudad Delicia.</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado de 7:00 a 20:00.</p>
+                    <p><strong>Teléfono:</strong> (123) 456-7890</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.85785315575!2d-3.69083868471243!3d40.41677537936528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422880a9f5d5e1%3A0x1d1e4e4e4e4e4e4!2sPuerta%20del%20Sol%2C%20Madrid!5e0!3m2!1ses!2ses!4v1678886543210!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>Elaborado con ♥ por El Horno de la Tierra</p>
+        </div>
+    </footer>
+
+    <!-- Script para el carrusel y animaciones -->
+    <script>
+        // --- LÓGICA DE PEDIDOS WHATSAPP ---
+        function pedirProducto(nombreProducto) {
+            const numero = 'TUNUMERO'; // <-- Reemplaza con tu número de WhatsApp (ej: 521XXXXXXXXXX)
+            const mensaje = `¡Hola! Quisiera solicitar información para un pedido de: ${nombreProducto}.`;
+            const url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        // --- LÓGICA DE ANIMACIÓN AL SCROLL ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Carrusel (sin cambios)
+        const carousel = document.querySelector('.carousel');
+        const slides = Array.from(carousel.children);
+        const nextButton = document.querySelector('.next');
+        const prevButton = document.querySelector('.prev');
+        const slideWidth = slides[0].getBoundingClientRect().width;
+
+        // Organizar slides uno al lado del otro
+        const setSlidePosition = (slide, index) => {
+            slide.style.left = slideWidth * index + 'px';
+        };
+        slides.forEach(setSlidePosition);
+
+        let currentIndex = 0;
+
+        const moveToSlide = (newIndex) => {
+            if (newIndex < 0) newIndex = slides.length - 1;
+            if (newIndex >= slides.length) newIndex = 0;
+            
+            carousel.style.transform = 'translateX(-' + slides[newIndex].style.left + ')';
+            currentIndex = newIndex;
+        }
+
+        nextButton.addEventListener('click', e => {
+            moveToSlide(currentIndex + 1);
+        });
+
+        prevButton.addEventListener('click', e => {
+            moveToSlide(currentIndex - 1);
+        });
+    </script>
+</body>
+</html>

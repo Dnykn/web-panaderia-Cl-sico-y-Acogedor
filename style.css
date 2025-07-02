@@ -1,0 +1,227 @@
+/* --- Variables --- */
+:root {
+    --color-principal: #8B4513; /* Marrón silla de montar */
+    --color-secundario: #F5DEB3; /* Trigo */
+    --color-acento: #D2691E; /* Chocolate */
+    --color-texto: #333;
+    --fuente-titulos: 'Lora', serif;
+    --fuente-cuerpo: 'Roboto', sans-serif;
+}
+
+/* --- Estilos Generales --- */
+body {
+    font-family: var(--fuente-cuerpo);
+    line-height: 1.6;
+    color: var(--color-texto);
+    margin: 0;
+    background-color: #fdfaf6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-principal);
+}
+
+/* --- Header --- */
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('imagenes/fondo-panaderia.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+/* --- Navegación --- */
+.nav {
+    background-color: var(--color-principal);
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--color-secundario);
+}
+
+/* --- Secciones --- */
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--color-secundario);
+}
+
+.section-img {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    border: 5px solid var(--color-secundario);
+}
+
+/* --- Productos --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+/* ... (CSS anterior) ... */
+
+/* --- Estilos para el Carrusel --- */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 400px; /* Ajusta el ancho del carrusel visible */
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(139, 69, 19, 0.7);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+.carousel-button.prev { left: 10px; }
+.carousel-button.next { right: 10px; }
+
+/* --- Estilos para el Mapa --- */
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    text-align: left;
+}
+.contact-info > div {
+    flex: 1;
+    min-width: 300px;
+}
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    border: 3px solid var(--color-secundario);
+}
+
+/* ... CSS anterior ... */
+
+/* Estilo para el botón de WhatsApp */
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Estilo para el botón de CTA de distribución */
+.cta-button-distribucion {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+.cta-button-distribucion:hover {
+    background-color: var(--color-acento);
+}
+
+/* Estilos para la animación de scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+}
+.animate-on-scroll.visible {
+    opacity: 1;
+}
